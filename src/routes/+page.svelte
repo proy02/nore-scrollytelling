@@ -424,8 +424,12 @@
     const lastStep = stepElements[stepElements.length - 1];
     if (lastStep) {
       const lastRect = lastStep.getBoundingClientRect();
-      // scrollytellingDone = lastRect.bottom < viewportMiddle;
-      scrollytellingDone = lastRect.bottom < window.innerHeight;
+      if (isMobile) {
+        // ✅ on mobile wait until last step is fully scrolled off screen
+        scrollytellingDone = lastRect.bottom < 0;
+      } else {
+        scrollytellingDone = lastRect.bottom < window.innerHeight;
+      }
     }
 
     let targetStep;

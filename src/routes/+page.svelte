@@ -1168,14 +1168,14 @@
 
     .intro-info-panel h1 {
       font-size: 1.8rem !important;
-      color: red;
+      color: rgb(0, 0, 0);
       line-height: 1.3;
       margin: 0 0 0.75rem 0;
     }
 
     .intro-info-panel p {
-      font-size: 0.50rem !important;
-      line-height: 1.5;
+      font-size: 0.75rem !important;
+      line-height: 1.5 !important;
       margin: 0;
     }
 

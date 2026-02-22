@@ -24,7 +24,7 @@
 
   const FULL_VIEWBOX_DESKTOP = [0, 0, 1020.41, 1287.10];
   const FULL_VIEWBOX_TABLET  = [0, 0, 1000, 1287.10];
-  const FULL_VIEWBOX_MOBILE  = [0, 80, 623.63,  1082.83];
+  const FULL_VIEWBOX_MOBILE  = [0, 0, 623.63,  1082.83];
 
   const viewBox = tweened(FULL_VIEWBOX_DESKTOP, {
     duration: 1200,
@@ -1174,7 +1174,7 @@
 
     .intro-info-panel p {
       font-size: 0.95rem !important;
-      line-height: 1.3;
+      line-height: 1.2;
       margin: 0;
     }
 
@@ -1205,6 +1205,6 @@
   /* ===== SMALL MOBILE ===== */
   @media (max-width: 480px) {
     .info-panel { padding: 1.5rem 1rem; width: calc(100% - 1rem); margin: 0 0.5rem; }
-    .info-panel p { font-size: 1.1rem !important; }
+    .info-panel p { font-size: 0.95rem !important; }
   }
 </style>

@@ -209,10 +209,14 @@
                         isTablet ? FULL_VIEWBOX_TABLET :
                         FULL_VIEWBOX_DESKTOP;
 
-    if (step.viewBox) {
-      const targetViewBox = isMobile ? step.viewBox.mobile :
-                            isTablet ? step.viewBox.tablet :
-                            step.viewBox.desktop;
+    // if (step.viewBox) {
+    //   const targetViewBox = isMobile ? step.viewBox.mobile :
+    //                         isTablet ? step.viewBox.tablet :
+    //                         step.viewBox.desktop;
+
+    if (step.viewBox && !isMobile) {
+    const targetViewBox = isTablet ? step.viewBox.tablet :
+                          step.viewBox.desktop;
 
       viewBox.set(fullViewBox, { duration: 0 });
       setTimeout(() => {
@@ -446,6 +450,37 @@
         }
       }
     });
+
+    // ✅ mobile only: reactive zoom for step 8 based on scroll position
+    if (isMobile) {
+      const step8El = stepElements[8];
+      if (step8El) {
+        const rect = step8El.getBoundingClientRect();
+        const scrolledInto = -rect.top;
+        const threshold = step8El.offsetHeight * 0.25;
+        const svgEl = getSvgEl();
+        if (svgEl) {
+          const locator = svgEl.getElementById('pollution_locator');
+          if (scrolledInto > threshold) {
+            // zoomed in
+            viewBox.set([125, 140, 403, 702]);
+            if (locator && locator.style.opacity !== '0') {
+              locator.style.transition = 'opacity 0.6s ease-in-out';
+              locator.style.opacity = '0';
+              setTimeout(() => { locator.style.display = 'none'; }, 600);
+            }
+          } else if (currentStep === 8 || scrolledInto > 0) {
+            // scrolled back above threshold — zoom out
+            viewBox.set(FULL_VIEWBOX_MOBILE);
+            if (locator && locator.style.opacity === '0') {
+              locator.style.display = 'block';
+              locator.style.transition = 'opacity 0.6s ease-in-out';
+              locator.style.opacity = '1';
+            }
+          }
+        }
+      }
+    }
 
     // ✅ detect if we've scrolled past all steps
     const lastStep = stepElements[stepElements.length - 1];

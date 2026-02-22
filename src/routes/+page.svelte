@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import { onMount, tick } from 'svelte';
   import { browser } from '$app/environment';
   import { tweened } from 'svelte/motion';
@@ -466,8 +467,9 @@
     checkIfMobile();
 
     // 2. Fetch only the SVG we actually need
-    const url = isMobile ? '/nore_mobile.svg' : '/nore_1.svg';
-    svgContent = await fetch(url).then(r => r.text());
+    const url = isMobile ? `${base}/nore_mobile.svg` : `${base}/nore_1.svg`;
+    const raw = await fetch(url).then(r => r.text());
+    svgContent = raw.replaceAll('/images/', `${base}/images/`);
     await tick();
     initSvgLayers();
 
@@ -892,6 +894,7 @@
     font-weight: 700;
     line-height: 1.10;
     font-family: PT Serif;
+    text-align: center;
   }
 
   .intro-info-panel p {

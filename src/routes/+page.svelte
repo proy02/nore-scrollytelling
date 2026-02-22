@@ -24,7 +24,7 @@
 
   const FULL_VIEWBOX_DESKTOP = [0, 0, 1020.41, 1287.10];
   const FULL_VIEWBOX_TABLET  = [0, 0, 1000, 1287.10];
-  const FULL_VIEWBOX_MOBILE  = [0, 135, 623.63,  1082.83];
+  const FULL_VIEWBOX_MOBILE  = [0, 80, 623.63,  1082.83];
 
   const viewBox = tweened(FULL_VIEWBOX_DESKTOP, {
     duration: 1200,
@@ -1137,7 +1137,7 @@
       color: #000000;
     }
 
-    .end-spacer { height: 0vh; }
+    .end-spacer { height: 25vh; }
     .desktop-blur { display: none; }
     .mobile-blur  { display: block; }
 

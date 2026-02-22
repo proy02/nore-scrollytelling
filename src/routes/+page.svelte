@@ -1169,7 +1169,7 @@
     .intro-info-panel h1 {
       font-size: 1.40rem !important;
       color: rgb(0, 0, 0);
-      line-height: 1.25;
+      line-height: 1.20;
       margin: 0 0 0.75rem 0;
     }
 
@@ -1177,6 +1177,10 @@
       font-size: 0.75rem !important;
       line-height: 1.15 !important;
       margin: 0;
+    }
+
+    .intro-info-panel :global(.keep-scrolling) {
+      margin-top: 0.5rem;
     }
 
     .ending-section {

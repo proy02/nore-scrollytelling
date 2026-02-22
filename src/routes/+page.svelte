@@ -1167,7 +1167,7 @@
     }
 
     .intro-info-panel h1 {
-      font-size: 1.5rem !important;
+      font-size: 1.40rem !important;
       color: rgb(0, 0, 0);
       line-height: 1.25;
       margin: 0 0 0.75rem 0;

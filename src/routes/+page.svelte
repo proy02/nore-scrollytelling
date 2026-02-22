@@ -1175,7 +1175,7 @@
 
     .intro-info-panel p {
       font-size: 0.75rem !important;
-      line-height: 1.5 !important;
+      line-height: 1.15 !important;
       margin: 0;
     }
 

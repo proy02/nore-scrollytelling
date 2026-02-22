@@ -1137,7 +1137,7 @@
       color: #000000;
     }
 
-    .end-spacer { height: 25vh; }
+    .end-spacer { height: 100vh; }
     .desktop-blur { display: none; }
     .mobile-blur  { display: block; }
 

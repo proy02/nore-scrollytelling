@@ -1206,6 +1206,6 @@
   /* ===== SMALL MOBILE ===== */
   @media (max-width: 480px) {
     .info-panel { padding: 1.5rem 1rem; width: calc(100% - 1rem); margin: 0 0.5rem; }
-    .info-panel p { font-size: 0.95rem !important; }
+    .info-panel p { font-size: 0.95rem; }
   }
 </style>

@@ -1131,9 +1131,9 @@
     }
 
     .info-panel p {
-      /* font-size: 2.5rem !important; */
+      font-size: 1rem !important;
       margin: 0 0 1.5rem 0;
-      line-height: 1.5rem !important;
+      line-height: 1.2rem !important;
       color: #000000;
     }
 

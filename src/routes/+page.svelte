@@ -242,6 +242,19 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
+    // ✅ mobile: if leaving step 8, restore pollution locator and zoom out
+    if (isMobile && stepIndex !== 8) {
+      const svgEl = getSvgEl();
+      if (svgEl) {
+        const locator = svgEl.getElementById('pollution_locator');
+        if (locator) {
+          locator.style.display = 'block';
+          locator.style.opacity = '1';
+          locator.style.transition = 'none';
+        }
+      }
+    }
+
     allLayers.forEach(layerId => {
       const layer = svgEl.getElementById(layerId);
       if (layer) {
@@ -413,10 +426,24 @@
     const viewportMiddle = window.innerHeight / 2;
     let detectedStep = null;
 
+    // stepElements.forEach((el, index) => {
+    //   const rect = el.getBoundingClientRect();
+    //   if (rect.top < viewportMiddle && rect.bottom > viewportMiddle) {
+    //     detectedStep = index;
+    //   }
+    // });
+
     stepElements.forEach((el, index) => {
       const rect = el.getBoundingClientRect();
-      if (rect.top < viewportMiddle && rect.bottom > viewportMiddle) {
-        detectedStep = index;
+      if (isMobile) {
+        // ✅ on mobile: layer changes only when previous step is completely gone off top
+        if (rect.top <= 0 && rect.bottom > 0) {
+          detectedStep = index;
+        }
+      } else {
+        if (rect.top < viewportMiddle && rect.bottom > viewportMiddle) {
+          detectedStep = index;
+        }
       }
     });
 
@@ -469,6 +496,9 @@
   onMount(async () => {
     // 1. Detect actual screen size
     checkIfMobile();
+
+    // ✅ Lock vh to initial window height — prevents URL bar shift on mobile
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
 
     // 2. Fetch only the SVG we actually need
     const url = isMobile ? `${base}/nore_mobile.svg` : `${base}/nore_1.svg`;
@@ -1076,8 +1106,10 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%;
-      height: 100vh;
-      height: 100dvh;
+      /* height: 100vh;
+      height: 100dvh; */
+      height: var(--vh, 100dvh);  /* ← was: 100vh / 100dvh */
+      height: var(--vh, 100dvh);
       z-index: 1;
       padding: 0; margin: 0;
       display: block;

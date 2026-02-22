@@ -617,7 +617,7 @@
            merchants traded along our banks, and today their waters still support navigation, agriculture
            and recreation. In folklore, the Three Sisters are often personified as kin—three distinct but 
            united forces shaping the land and the lives of those who dwell beside them.</p>
-        <p class="keep-scrolling" style="font-size: 1.2rem !important"> Keep Scrolling ↓</p>
+        <p class="keep-scrolling"> Keep Scrolling ↓</p>
       </div>
     </div>
 
@@ -1275,6 +1275,11 @@
       color: #353535 !important;
       font-family: 'Space Mono', monospace !important;
       line-height: 0.80rem !important;
+    }
+
+    .intro-info-panel :global(.keep-scrolling) {
+      font-size: 0.75rem !important;
+      margin-top: 0.5rem;
     }
   }
 

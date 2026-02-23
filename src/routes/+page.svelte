@@ -1209,7 +1209,7 @@
       color: #000000;
     }
 
-    .end-spacer { height: 100vh; }
+    .end-spacer { height: 150vh; }
     .desktop-blur { display: none; }
     .mobile-blur  { display: block; }
 

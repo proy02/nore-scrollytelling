@@ -607,7 +607,6 @@
     <div class="intro-panel">
       <div class="info-panel intro-info-panel">
         <h1>A Living <br>Catchment Story<br></h1>
-        <p>A Living Catchment Story</p> 
         <p>This is not a finished story. It’s the beginning of a journey.</p>
         <p>What you are about to scroll through is a scaffold — a structure to help us see,
            sense, and speak about the Three Sisters catchment of southeast Ireland: the Nore,

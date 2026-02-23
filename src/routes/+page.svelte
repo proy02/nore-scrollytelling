@@ -442,7 +442,7 @@
       if (isMobile) {
         // ✅ on mobile: layer changes only when previous step is completely gone off top
            // (rect.top <= 0 && rect.bottom > 0)
-        if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) {
+        if (rect.top < window.innerHeight * 0.50 && rect.bottom > 0) {
           detectedStep = index;
         }
       } else {

@@ -975,7 +975,7 @@
   .intro-info-panel p {
     margin: 0 0 0.75rem 0;
     color: #232323;
-    line-height: 1;
+    line-height: 1.15;
     font-size: 1.1rem;
     font-family: PT Serif;
   }

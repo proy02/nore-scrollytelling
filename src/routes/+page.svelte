@@ -1251,7 +1251,7 @@
     .intro-info-panel p {
       font-size: 0.75rem !important;
       line-height: 1.25 !important;
-      margin: 0.5 0 0.62rem 0 !important;
+      margin: 1 0 0.62rem 0 !important;
     }
 
     .intro-info-panel :global(.keep-scrolling) {

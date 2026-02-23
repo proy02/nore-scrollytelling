@@ -441,7 +441,8 @@
       const rect = el.getBoundingClientRect();
       if (isMobile) {
         // ✅ on mobile: layer changes only when previous step is completely gone off top
-        if (rect.top <= 0 && rect.bottom > 0) {
+           // (rect.top <= 0 && rect.bottom > 0)
+        if (rect.top < window.innerHeight * 0.80 && rect.bottom > 0) {
           detectedStep = index;
         }
       } else {

@@ -1022,7 +1022,7 @@
   }
 
   .intro-info-panel :global(.keep-scrolling) {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   /* ===== TABLET ===== */

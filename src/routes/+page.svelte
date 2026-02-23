@@ -643,9 +643,10 @@
     <p>An Invitation to Co-Author</p>
     <p>If catchments are circulatory systems, <br>then stories are how they learn to speak.<br></p>
     <p>This publication does not conclude the story of the Nore, the Suir, or the Barrow. It simply creates a common ground from which many stories can grow. The deepest knowledge of a catchment does not live in reports or maps alone, but in fields and kitchens, on riverbanks and bridges, in daily walks and floods remembered decades later.</p>
-    <p class="source"> Written and developed by Mignon Carr, Pulaha Roy and Tasneem Khan <br>Source: EPA Ireland | National Biodiversity Data Centre | 
-      National Parks & Wildlife Service Copernicus Sentinel 30m | OpenStreetMap | <br> 
-      CORINE Land Cover, Copernicus Land Monitoring Service
+    <p class="source"> <br>Written and developed by Mignon Carr, Pulaha Roy and Tasneem Khan<br>
+      <br>Source: EPA Ireland | National Biodiversity Data Centre | 
+      National Parks & Wildlife Service Copernicus Sentinel 30m | OpenStreetMap | 
+      CORINE Land Cover, Copernicus Land Monitoring Service <br>
     </p>
   </div>
 </div>

@@ -607,7 +607,6 @@
     <div class="intro-panel">
       <div class="info-panel intro-info-panel">
         <h1>The Three Sisters of <br> Southeast Ireland <br></h1>
-        
         <p>A Living Catchment Story</p> 
         <p>This is not a finished story.</p>
         <p>It is a beginning.</p>
@@ -623,7 +622,7 @@
            you are in the system. Explore how land, water and life interact.  To reflect on what you’ve seen change.
            What you’ve inherited. What you worry about. What you hope for.</p>
           <p>This story is designed to be entered, contemplated — and then rewritten, with you.</p>
-
+          
         <p class="keep-scrolling"> Keep Scrolling ↓</p>
       </div>
     </div>
@@ -974,7 +973,7 @@
   }
 
   .intro-info-panel p {
-    margin: 0 0 1rem 0;  /* adjust this number */;
+    margin: 0;
     color: #232323;
     line-height: 1.5;
     font-size: 1.1rem;
@@ -1254,7 +1253,7 @@
     .intro-info-panel p {
       font-size: 0.75rem !important;
       line-height: 1.15 !important;
-      margin: 0;
+      margin: 0 0 1rem 0 !important;
     }
 
     .intro-info-panel :global(.keep-scrolling) {

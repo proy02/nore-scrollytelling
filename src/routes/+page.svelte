@@ -608,21 +608,18 @@
       <div class="info-panel intro-info-panel">
         <h1>A Living <br>Catchment Story<br></h1>
         <p>A Living Catchment Story</p> 
-        <p>This is not a finished story.</p>
-        <p>It is a beginning.</p>
-        <p>What you are about to scroll through is a scaffold — a structure to help us see, sense,
-          and speak about the Three Sisters catchment of southeast Ireland: the Nore, the Suir, and the Barrow,
-          and the lands and lives they connect.</p>
-          <p> This story is a primer — for curiosity, for care, and for citizen science.
-              It offers shared reference points: rivers and tributaries, soils and species,
-              pressures and protections. But it does not pretend to hold the whole truth.</p>
-          <p>A catchment is not only a hydrological unit.</p>
-          <p>It is a lived place and lived places are known through memory, observation, labour, and life.</p>
-          <p>As you move through these layers — maps, stanzas, data, and images — you are invited to notice where
-           you are in the system. Explore how land, water and life interact.  To reflect on what you’ve seen change.
-           What you’ve inherited. What you worry about. What you hope for.</p>
-          <p>This story is designed to be entered, contemplated — and then rewritten, with you.</p>
-          
+        <p>This is not a finished story. It’s the beginning of a journey.</p>
+        <p>What you are about to scroll through is a scaffold — a structure to help us see,
+           sense, and speak about the Three Sisters catchment of southeast Ireland: the Nore,
+          the Suir, and the Barrow, and the lands and lives they connect. This story is a primer
+          — for curiosity, for care, and for citizen science. It offers shared reference points:
+          rivers and tributaries, soils and species, pressures and protections. 
+          But it does not claim to hold the whole truth.</p>
+        <p>As you move through these layers — maps, stanzas, data, and images — you are invited
+           to notice where you are in the system. Explore how land, water and life interact. 
+           To reflect on what you’ve seen change. What you’ve inherited. What you worry about. 
+           What you hope for. This story is designed to be entered, contemplated
+           — and then rewritten, with you.</p>
         <p class="keep-scrolling"> Keep Scrolling ↓</p>
       </div>
     </div>

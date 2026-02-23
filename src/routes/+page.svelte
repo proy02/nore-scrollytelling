@@ -607,17 +607,16 @@
     <div class="intro-panel">
       <div class="info-panel intro-info-panel">
         <h1>The Three Sisters of <br> Southeast Ireland <br></h1>
-        <p>The rivers Suir, Barrow and Nore run like blue veins through the landscape of southeast Ireland,
-           their waters tracing ancient paths across rock soil, and memory. At Waterford Harbour, 
-           these rivers meet in a final, broad embrace: the Nore and Barrow merge at Cheekpoint and flow 
-           together into the Suir Estuary before reaching the Celtic Sea. Here, the River Nore, Barrow and
-           Suir are collectively known as "The Three Sisters"- a term deeply woven into Ireland's cultural
-           and geographical identity. These three rivers drain much of Ireland's southeast, their combined
-           catchments covering more than 9000 square kilometres. Their confluence has long been a focal
-           point for settlement, navigation, and exchange: Viking longboats once sailed upriver, medieval
-           merchants traded along our banks, and today their waters still support navigation, agriculture
-           and recreation. In folklore, the Three Sisters are often personified as kin—three distinct but 
-           united forces shaping the land and the lives of those who dwell beside them.</p>
+        <p>A Living Catchment Story <br>This is not a finished story.<br>It is a beginning.<br>
+           What you are about to scroll through is a scaffold — a structure to help us see, sense,
+          and speak about the Three Sisters catchment of southeast Ireland: the Nore, the Suir, and the Barrow,
+          and the lands and lives they connect.<br>
+          <br> This story is a primer — for curiosity, for care, and for citizen science.
+              It offers shared reference points: rivers and tributaries, soils and species,
+              pressures and protections. But it does not pretend to hold the whole truth.<br>
+          <br>
+
+        </p>
         <p class="keep-scrolling"> Keep Scrolling ↓</p>
       </div>
     </div>

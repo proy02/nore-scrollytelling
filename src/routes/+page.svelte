@@ -1245,7 +1245,7 @@
       font-size: 1.40rem !important;
       color: rgb(0, 0, 0);
       line-height: 1.20;
-      margin: 0 0 0.35rem 0 !important;
+      margin: 0.35rem 0 0.35rem 0 !important;
     }
 
     .intro-info-panel p {

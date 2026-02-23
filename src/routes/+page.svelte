@@ -1238,14 +1238,14 @@
       -webkit-backdrop-filter: blur(10px);
       width: calc(100% - 2rem);
       margin: 0 1rem;
-      padding: 1rem 1rem 0.5rem 1rem;
+      padding: 1rem 1rem 0.5rem 1rem !important;
     }
 
     .intro-info-panel h1 {
       font-size: 1.40rem !important;
       color: rgb(0, 0, 0);
       line-height: 1.20;
-      margin: 0 0 0.35rem 0;
+      margin: 0 0 0.35rem 0 !important;
     }
 
     .intro-info-panel p {
@@ -1255,7 +1255,9 @@
     }
 
     .intro-info-panel :global(.keep-scrolling) {
+      font-size: 0.75rem !important;
       margin-top: 0.5rem;
+
     }
 
     .ending-section {
@@ -1279,11 +1281,6 @@
       color: #353535 !important;
       font-family: 'Space Mono', monospace !important;
       line-height: 0.80rem !important;
-    }
-
-    .intro-info-panel :global(.keep-scrolling) {
-      font-size: 0.75rem !important;
-      margin-top: 0.5rem;
     }
   }
 

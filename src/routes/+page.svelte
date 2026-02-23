@@ -1228,7 +1228,7 @@
       box-sizing: border-box;
       min-height: 100vh;
       align-items: flex-end;
-      padding-bottom: 3rem;
+      padding-bottom: 10rem;
     }
 
     .intro-info-panel {

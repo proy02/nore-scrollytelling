@@ -606,7 +606,7 @@
     <!-- INTRO PANEL — appears before step 0 -->
     <div class="intro-panel">
       <div class="info-panel intro-info-panel">
-        <h1>The Three Sisters of <br> Southeast Ireland <br></h1>
+        <h1>A Living Catchment Story</h1>
         <p>A Living Catchment Story</p> 
         <p>This is not a finished story.</p>
         <p>It is a beginning.</p>

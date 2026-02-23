@@ -607,7 +607,9 @@
     <div class="intro-panel">
       <div class="info-panel intro-info-panel">
         <h1>The Three Sisters of <br> Southeast Ireland <br></h1>
-        <p>A Living Catchment Story <br>This is not a finished story.<br>It is a beginning.<br>
+        <p>A Living Catchment Story</p> 
+        <p>This is not a finished story.</p>
+        <p>It is a beginning.</p>
            What you are about to scroll through is a scaffold — a structure to help us see, sense,
           and speak about the Three Sisters catchment of southeast Ireland: the Nore, the Suir, and the Barrow,
           and the lands and lives they connect.

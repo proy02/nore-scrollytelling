@@ -610,7 +610,7 @@
         <p>A Living Catchment Story <br>This is not a finished story.<br>It is a beginning.<br>
            What you are about to scroll through is a scaffold — a structure to help us see, sense,
           and speak about the Three Sisters catchment of southeast Ireland: the Nore, the Suir, and the Barrow,
-          and the lands and lives they connect.<br>
+          and the lands and lives they connect.
           <br> This story is a primer — for curiosity, for care, and for citizen science.
               It offers shared reference points: rivers and tributaries, soils and species,
               pressures and protections. But it does not pretend to hold the whole truth.<br>

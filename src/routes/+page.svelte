@@ -608,7 +608,7 @@
       <div class="info-panel intro-info-panel">
         <h1>The Three Sisters of <br> Southeast Ireland <br></h1>
         
-        <p>A Living Catchment Story 
+        <p><br>A Living Catchment Story<br>
         <br>This is not a finished story.<br>
         <br>It is a beginning.<br>
         <br>What you are about to scroll through is a scaffold — a structure to help us see, sense,

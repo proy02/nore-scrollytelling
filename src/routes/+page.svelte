@@ -614,7 +614,12 @@
           <br> This story is a primer — for curiosity, for care, and for citizen science.
               It offers shared reference points: rivers and tributaries, soils and species,
               pressures and protections. But it does not pretend to hold the whole truth.<br>
-          <br>
+          <br>A catchment is not only a hydrological unit.<br>
+          <br>It is a lived place and lived places are known through memory, observation, labour, and life.<br>
+          <br>As you move through these layers — maps, stanzas, data, and images — you are invited to notice where
+           you are in the system. Explore how land, water and life interact.  To reflect on what you’ve seen change.
+           What you’ve inherited. What you worry about. What you hope for.<br>
+          <br>This story is designed to be entered, contemplated — and then rewritten, with you.<br>
 
         </p>
         <p class="keep-scrolling"> Keep Scrolling ↓</p>

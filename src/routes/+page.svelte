@@ -639,12 +639,12 @@
 
 <div class="ending-section">
   <div class="ending-content" class:visible={scrollytellingDone}>
-    <p>Yet this is also a story of care. Local groups like the Nore River Catchment Trust bring farmers, scientists, and anglers together. School children count invertebrates; farmers plant riparian buffers; volunteers test water. Slowly, the invisible networks become visible again. The catchment becomes a shared canvas for stewardship—where every stream has a name, and every stretch of river tells a story.</p>
+    <p>Yet this is also a story of care. Local groups bring farmers, scientists, and anglers together. School children count invertebrates; farmers plant riparian buffers; volunteers test water. Slowly, the invisible networks become visible again. The catchment becomes a shared canvas for stewardship—where every stream has a name, and every stretch of river tells a story.</p>
     <p>An Invitation to Co-Author</p>
     <p>If catchments are circulatory systems, <br>then stories are how they learn to speak.<br></p>
     <p>This publication does not conclude the story of the Nore, the Suir, or the Barrow. It simply creates a common ground from which many stories can grow. The deepest knowledge of a catchment does not live in reports or maps alone, but in fields and kitchens, on riverbanks and bridges, in daily walks and floods remembered decades later.</p>
-    <p class="source">Source: EPA Ireland | National Biodiversity Data Centre | 
-      National Parks & Wildlife Service Copernicus Sentinel 30m | OpenStreetMap | 
+    <p class="source"> Written and developed by Mignon Carr, Pulaha Roy and Tasneem Khan <br>Source: EPA Ireland | National Biodiversity Data Centre | 
+      National Parks & Wildlife Service Copernicus Sentinel 30m | OpenStreetMap | <br> 
       CORINE Land Cover, Copernicus Land Monitoring Service
     </p>
   </div>

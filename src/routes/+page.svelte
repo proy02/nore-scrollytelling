@@ -1228,7 +1228,7 @@
       box-sizing: border-box;
       min-height: 100vh;
       align-items: flex-end;
-      padding-bottom: 15rem;
+      padding-bottom: 6rem;
     }
 
     .intro-info-panel {
@@ -1238,6 +1238,7 @@
       -webkit-backdrop-filter: blur(10px);
       width: calc(100% - 2rem);
       margin: 0 1rem;
+      padding: 1rem 1rem 0.5rem 1rem;
     }
 
     .intro-info-panel h1 {

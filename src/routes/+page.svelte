@@ -96,7 +96,7 @@
     {
       id: 8,
       title: "Pollution Levels",
-      description: "This map shows where pollution pressure is greatest across the Nore catchment. Based on flow and land use, areas are classified by their potential to impact water quality: <span class='very_high'>very high</span> and <span class='high'>high</span>. Darker zones signal where runoff, nutrients, or contaminants are most likely to reach our rivers. These are the places where action can make the biggest difference. The Nore faces many pressures from <span class='agriculture'>agricultural</span> runoff, habitat fragmentation, and groundwater contamination.",
+      description: "This map shows where pollution pressure is greatest across the Nore catchment. Based on flow and land use, areas are classified by their potential to impact water quality: <span class='high'>high</span> and <span class='very_high'>very high</span>. Darker zones signal where runoff, nutrients, or contaminants are most likely to reach our rivers. These are the places where action can make the biggest difference. The Nore faces many pressures from <span class='agriculture'>agricultural</span> runoff, habitat fragmentation, and groundwater contamination.",
       layers: ['pollution', 'pollution_locator', 'pollution_text', 'pollution_image'],
       viewBox: {
         desktop: [275, 150, 550, 950],

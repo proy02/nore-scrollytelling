@@ -1,38 +1,27 @@
-# sv
+# A Living Catchment Story
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A responsive, mobile-first scrollytelling story built on Svelte. Check the live demo here – [A Living Catchment Story](https://proy02.github.io/nore-scrollytelling/)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+## How to run the project
+Clone the project and install dependencies:
+```bash
+git clone https://github.com/proy02/washed_away.git
+cd washed_away
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+Start the development server:
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```sh
+Build for production:
+```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## How the project was developed
+The spatial data was processed on QGIS and exported as an .svg from Adobe Illustrator for better control during interactivity. Finally, for web development I chose Svelte as it lightweight and super elegant and just less code! 
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Finally, a lot AI-assisted debugging was involved during the web develpment process.   

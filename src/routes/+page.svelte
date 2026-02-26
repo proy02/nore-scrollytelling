@@ -813,7 +813,13 @@
     background-repeat: no-repeat;
   }
 
-  .desktop-blur { background-image: url('/nore_blur_desktop.webp'); }
+  .desktop-blur { 
+    background-image: url('/nore_blur_desktop.webp');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
   .mobile-blur  { display: none; background-image: url('/nore_blur_mobile.webp'); }
 
   .base-placeholder {

@@ -126,14 +126,29 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
+    // ✅ DIAGNOSIS LOGS
+    const containerW = svgContainer.clientWidth;
+    const containerH = svgContainer.clientHeight;
+    const renderedH = containerW * (1287.10 / 1020.41);
+    const gap = containerH - renderedH;
+    console.log('--- SVG DIAGNOSIS ---');
+    console.log('Container width:', containerW);
+    console.log('Container height:', containerH);
+    console.log('SVG rendered height:', renderedH);
+    console.log('Gap:', gap);
+    console.log('isMobile:', isMobile, '| isTablet:', isTablet);
+    console.log('preserveAspectRatio:', svgEl.getAttribute('preserveAspectRatio'));
+    console.log('SVG boundingRect:', JSON.stringify(svgEl.getBoundingClientRect()));
+    console.log('--- END ---');
+
     // ✅ Instead: calculate the vertical gap and shift SVG up by that amount
     if (!isMobile && !isTablet) {
-        const containerW = svgContainer.clientWidth;
-        const containerH = svgContainer.clientHeight;
-        const renderedH = containerW * (1287.10 / 1020.41); // SVG natural height at this width
         if (renderedH < containerH) {
             const offset = (containerH - renderedH) / 2;
+            console.log('Applying translateY offset:', offset);
             svgEl.style.transform = `translateY(-${offset}px)`;
+        } else {
+            console.log('No gap — no translateY needed');
         }
     }
 

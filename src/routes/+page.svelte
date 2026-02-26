@@ -731,9 +731,12 @@
   .map-container::before {
     content: '';
     position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 100px;
-    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff, transparent);
+    z-index: 11;  /* above the blur */
     pointer-events: none;
   }
 

@@ -126,6 +126,23 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
+    // ✅ BLUR DIAGNOSIS
+    const blurEl = svgContainer.closest('.svg-wrapper')?.querySelector('.desktop-blur');
+    console.log('--- BLUR DIAGNOSIS ---');
+    console.log('Blur element found:', !!blurEl);
+    if (blurEl) {
+        const blurRect = blurEl.getBoundingClientRect();
+        console.log('Blur rect:', JSON.stringify(blurRect));
+        console.log('Blur computed styles:', {
+            backgroundImage: getComputedStyle(blurEl).backgroundImage,
+            backgroundSize: getComputedStyle(blurEl).backgroundSize,
+            backgroundPosition: getComputedStyle(blurEl).backgroundPosition,
+            width: getComputedStyle(blurEl).width,
+            height: getComputedStyle(blurEl).height,
+        });
+    }
+    console.log('--- END BLUR DIAGNOSIS ---');
+
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)
     svgEl.querySelectorAll('image').forEach(img => {

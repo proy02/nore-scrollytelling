@@ -733,7 +733,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100px;
+    width: 50px;
     height: 100%;
     background: linear-gradient(to right, #ffffff, #ffffff 40px, transparent);
     z-index: 11;  /* above the blur */
@@ -1065,6 +1065,10 @@
       display: block;
       background: #ffffff;
       overflow: hidden;
+    }
+
+    .map-container::before {
+        display: none;
     }
 
     .map-container .svg-container {

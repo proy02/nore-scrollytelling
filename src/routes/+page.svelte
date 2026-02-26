@@ -735,7 +735,7 @@
     top: 0;
     width: 150px;
     height: 100%;
-    background: linear-gradient(to right, #ffffff, transparent);
+    background: linear-gradient(to right, #ffffff, #ffffff 40px, transparent);
     z-index: 11;  /* above the blur */
     pointer-events: none;
   }

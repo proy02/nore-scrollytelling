@@ -809,7 +809,7 @@
   .desktop-blur { 
     background-image: url('/nore_blur_desktop.webp');
     background-size: 100% 100%;
-    background-position: left top;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 

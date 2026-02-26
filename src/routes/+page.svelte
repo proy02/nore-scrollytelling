@@ -126,8 +126,16 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
-    // ✅ ADD THIS — anchor SVG to top on all desktop sizes
-    svgEl.setAttribute('preserveAspectRatio', 'xMidYMin meet');
+    // ✅ Instead: calculate the vertical gap and shift SVG up by that amount
+    if (!isMobile && !isTablet) {
+        const containerW = svgContainer.clientWidth;
+        const containerH = svgContainer.clientHeight;
+        const renderedH = containerW * (1287.10 / 1020.41); // SVG natural height at this width
+        if (renderedH < containerH) {
+            const offset = (containerH - renderedH) / 2;
+            svgEl.style.transform = `translateY(-${offset}px)`;
+        }
+    }
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)
     svgEl.querySelectorAll('image').forEach(img => {
@@ -530,6 +538,27 @@
                            FULL_VIEWBOX_DESKTOP;
     viewBox.set(correctViewBox, { duration: 0 });
     initialLoad = true;
+
+    // ✅ ADD — recalculate SVG vertical offset on resize
+    if (svgReady) {
+        const svgEl = getSvgEl();
+        if (svgEl) {
+            if (!isMobile && !isTablet) {
+                const containerW = svgContainer.clientWidth;
+                const containerH = svgContainer.clientHeight;
+                const renderedH = containerW * (1287.10 / 1020.41);
+                if (renderedH < containerH) {
+                    const offset = (containerH - renderedH) / 2;
+                    svgEl.style.transform = `translateY(-${offset}px)`;
+                } else {
+                    svgEl.style.transform = '';
+                }
+            } else {
+                const svgEl = getSvgEl();
+                if (svgEl) svgEl.style.transform = '';
+            }
+        }
+    }
   }
 
   onMount(async () => {

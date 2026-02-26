@@ -712,10 +712,10 @@
     transition: opacity 0.6s ease-out;
   }
 
-  .map-container.fading {
+  /* .map-container.fading {
     opacity: 0;
     pointer-events: none;
-  }
+  } */
 
   .map-container::before {
     content: '';

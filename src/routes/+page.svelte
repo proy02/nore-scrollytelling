@@ -126,22 +126,16 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
-    // ✅ BLUR DIAGNOSIS
-    const blurEl = svgContainer.closest('.svg-wrapper')?.querySelector('.desktop-blur');
-    console.log('--- BLUR DIAGNOSIS ---');
-    console.log('Blur element found:', !!blurEl);
-    if (blurEl) {
-        const blurRect = blurEl.getBoundingClientRect();
-        console.log('Blur rect:', JSON.stringify(blurRect));
-        console.log('Blur computed styles:', {
-            backgroundImage: getComputedStyle(blurEl).backgroundImage,
-            backgroundSize: getComputedStyle(blurEl).backgroundSize,
-            backgroundPosition: getComputedStyle(blurEl).backgroundPosition,
-            width: getComputedStyle(blurEl).width,
-            height: getComputedStyle(blurEl).height,
-        });
-    }
-    console.log('--- END BLUR DIAGNOSIS ---');
+    // ✅ DIMENSION CHECK
+    const blurImg = new Image();
+    blurImg.onload = () => {
+        console.log('Blur webp natural width:', blurImg.naturalWidth);
+        console.log('Blur webp natural height:', blurImg.naturalHeight);
+    };
+    blurImg.src = `${base}/nore_blur_desktop.webp`;  // ← base prefix for GitHub Pages
+    console.log('SVG viewBox:', svgEl.getAttribute('viewBox'));
+    console.log('Container width:', svgContainer.clientWidth);
+    console.log('Container height:', svgContainer.clientHeight);
 
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)

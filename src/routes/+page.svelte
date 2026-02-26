@@ -802,7 +802,7 @@
     z-index: 10;
     pointer-events: none;
     background-size: cover;
-    background-position: left center;
+    background-position: left top;
     background-repeat: no-repeat;
   }
 

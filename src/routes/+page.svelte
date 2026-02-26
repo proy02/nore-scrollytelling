@@ -126,35 +126,8 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
-    // ✅ DIAGNOSIS LOGS
-    const containerW = svgContainer.clientWidth;
-    const containerH = svgContainer.clientHeight;
-    const renderedH = containerW * (1287.10 / 1020.41);
-    const gap = containerH - renderedH;
-    console.log('--- SVG DIAGNOSIS ---');
-    console.log('Container width:', containerW);
-    console.log('Container height:', containerH);
-    console.log('SVG rendered height:', renderedH);
-    console.log('Gap:', gap);
-    console.log('isMobile:', isMobile, '| isTablet:', isTablet);
-    console.log('preserveAspectRatio:', svgEl.getAttribute('preserveAspectRatio'));
-    console.log('SVG boundingRect:', JSON.stringify(svgEl.getBoundingClientRect()));
-    console.log('window.innerWidth:', window.innerWidth);
-    console.log('window.innerHeight:', window.innerHeight);
-    console.log('devicePixelRatio:', window.devicePixelRatio);
-    console.log('userAgent:', navigator.userAgent);
-    console.log('--- END ---');
-
-    // ✅ Instead: calculate the vertical gap and shift SVG up by that amount
-    if (!isMobile && !isTablet) {
-        if (renderedH < containerH) {
-            const offset = (containerH - renderedH) / 2;
-            console.log('Applying translateY offset:', offset);
-            svgEl.style.transform = `translateY(-${offset}px)`;
-        } else {
-            console.log('No gap — no translateY needed');
-        }
-    }
+    // ✅ ADD THIS — anchor SVG to top on all desktop sizes
+    svgEl.setAttribute('preserveAspectRatio', 'xMidYMin meet');
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)
     svgEl.querySelectorAll('image').forEach(img => {
@@ -557,27 +530,6 @@
                            FULL_VIEWBOX_DESKTOP;
     viewBox.set(correctViewBox, { duration: 0 });
     initialLoad = true;
-
-    // ✅ ADD — recalculate SVG vertical offset on resize
-    if (svgReady) {
-        const svgEl = getSvgEl();
-        if (svgEl) {
-            if (!isMobile && !isTablet) {
-                const containerW = svgContainer.clientWidth;
-                const containerH = svgContainer.clientHeight;
-                const renderedH = containerW * (1287.10 / 1020.41);
-                if (renderedH < containerH) {
-                    const offset = (containerH - renderedH) / 2;
-                    svgEl.style.transform = `translateY(-${offset}px)`;
-                } else {
-                    svgEl.style.transform = '';
-                }
-            } else {
-                const svgEl = getSvgEl();
-                if (svgEl) svgEl.style.transform = '';
-            }
-        }
-    }
   }
 
   onMount(async () => {
@@ -760,11 +712,6 @@
     transition: opacity 0.6s ease-out;
   }
 
-  /* .map-container.fading {
-    opacity: 0;
-    pointer-events: none;
-  } */
-
   .map-container::before {
     content: '';
     position: absolute;
@@ -776,8 +723,11 @@
 
   .map-container .svg-container :global(svg) {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .step {

@@ -126,8 +126,6 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
-    // ✅ ADD THIS — anchor SVG to top on all desktop sizes
-    svgEl.setAttribute('preserveAspectRatio', 'xMidYMin meet');
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)
     svgEl.querySelectorAll('image').forEach(img => {

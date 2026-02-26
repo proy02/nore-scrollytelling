@@ -994,6 +994,18 @@
     justify-content: center;
   }
 
+  .ending-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+    z-index: 21;
+    pointer-events: none;
+  }
+
   .ending-content {
     max-width: 600px;
     font-family: PT Serif;

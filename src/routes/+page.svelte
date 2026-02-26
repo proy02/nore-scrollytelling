@@ -228,6 +228,13 @@
         viewBox.set(targetViewBox);
 
         if (currentStep === 8) {
+          // ✅ switch to cover during zoom — locks blur to left edge
+            const blurEl = document.querySelector('.desktop-blur');
+            if (blurEl) {
+                blurEl.style.backgroundSize = 'cover';
+                blurEl.style.backgroundPosition = 'left top';
+            }
+
           const svgEl = getSvgEl();
           if (svgEl) {
             const locator = svgEl.getElementById('pollution_locator');
@@ -244,6 +251,13 @@
       const duration = initialLoad ? 0 : 1200;
       initialLoad = false;
       viewBox.set(fullViewBox, { duration });
+
+      // ✅ revert blur when leaving step 8
+      const blurEl = document.querySelector('.desktop-blur');
+      if (blurEl) {
+          blurEl.style.backgroundSize = 'contain';
+          blurEl.style.backgroundPosition = 'center top';
+      }
     }
   }
 
@@ -602,8 +616,7 @@
         <img src="/images/nore_mobile-1-low.webp" class="base-placeholder mobile-placeholder" alt="" />
         {@html svgContent}
       </div>
-      <!-- <div class="edge-blur-overlay desktop-blur"></div> -->
-      <img src="/nore_blur_desktop.webp" class="desktop-blur-img" alt="" />
+      <div class="edge-blur-overlay desktop-blur"></div>
       <div class="edge-blur-overlay mobile-blur"></div>
     </div>
   </div>
@@ -807,23 +820,11 @@
     background-repeat: no-repeat;
   }
 
-  /* .desktop-blur { 
+  .desktop-blur { 
     background-image: url('/nore_blur_desktop.webp');
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-  } */
-
-  .desktop-blur-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left top;
-    z-index: 10;
-    pointer-events: none;
   }
 
   .mobile-blur  { display: none; background-image: url('/nore_blur_mobile.webp'); }

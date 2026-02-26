@@ -126,17 +126,10 @@
     const svgEl = getSvgEl();
     if (!svgEl) return;
 
-    // ✅ DIMENSION CHECK
-    const blurImg = new Image();
-    blurImg.onload = () => {
-        console.log('Blur webp natural width:', blurImg.naturalWidth);
-        console.log('Blur webp natural height:', blurImg.naturalHeight);
-    };
-    blurImg.src = `${base}/nore_blur_desktop.webp`;  // ← base prefix for GitHub Pages
-    console.log('SVG viewBox:', svgEl.getAttribute('viewBox'));
-    console.log('Container width:', svgContainer.clientWidth);
-    console.log('Container height:', svgContainer.clientHeight);
-
+    // ✅ Pin SVG to top on desktop — prevents white gap on different screen sizes
+    if (!isMobile && !isTablet) {
+        svgEl.setAttribute('preserveAspectRatio', 'xMidYMin meet');
+    }
 
     // Fix xlink:href → href for inline SVG (mobile Safari requires this)
     svgEl.querySelectorAll('image').forEach(img => {
@@ -816,10 +809,10 @@
   .desktop-blur { 
     background-image: url('/nore_blur_desktop.webp');
     background-size: contain;
-    background-position: center center;
+    background-position: left top;
     background-repeat: no-repeat;
   }
-  
+
   .mobile-blur  { display: none; background-image: url('/nore_blur_mobile.webp'); }
 
   .base-placeholder {

@@ -139,6 +139,10 @@
     console.log('isMobile:', isMobile, '| isTablet:', isTablet);
     console.log('preserveAspectRatio:', svgEl.getAttribute('preserveAspectRatio'));
     console.log('SVG boundingRect:', JSON.stringify(svgEl.getBoundingClientRect()));
+    console.log('window.innerWidth:', window.innerWidth);
+    console.log('window.innerHeight:', window.innerHeight);
+    console.log('devicePixelRatio:', window.devicePixelRatio);
+    console.log('userAgent:', navigator.userAgent);
     console.log('--- END ---');
 
     // ✅ Instead: calculate the vertical gap and shift SVG up by that amount

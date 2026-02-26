@@ -808,7 +808,7 @@
 
   .desktop-blur { 
     background-image: url('/nore_blur_desktop.webp');
-    background-size: contain;
+    background-size:cover;
     background-position: left top;
     background-repeat: no-repeat;
   }

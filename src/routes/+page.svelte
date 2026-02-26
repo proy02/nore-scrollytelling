@@ -733,7 +733,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 70px;
+    width: 78px;
     height: 100%;
     background: linear-gradient(to right, #ffffff, transparent);
     z-index: 11;  /* above the blur */

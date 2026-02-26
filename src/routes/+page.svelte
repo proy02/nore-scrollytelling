@@ -602,7 +602,8 @@
         <img src="/images/nore_mobile-1-low.webp" class="base-placeholder mobile-placeholder" alt="" />
         {@html svgContent}
       </div>
-      <div class="edge-blur-overlay desktop-blur"></div>
+      <!-- <div class="edge-blur-overlay desktop-blur"></div> -->
+      <img src="/nore_blur_desktop.webp" class="desktop-blur-img" alt="" />
       <div class="edge-blur-overlay mobile-blur"></div>
     </div>
   </div>
@@ -806,11 +807,23 @@
     background-repeat: no-repeat;
   }
 
-  .desktop-blur { 
+  /* .desktop-blur { 
     background-image: url('/nore_blur_desktop.webp');
-    background-size: 100% 100%;
+    background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
+  } */
+
+  .desktop-blur-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    z-index: 10;
+    pointer-events: none;
   }
 
   .mobile-blur  { display: none; background-image: url('/nore_blur_mobile.webp'); }

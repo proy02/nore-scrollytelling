@@ -1187,6 +1187,10 @@
       overflow: hidden;
     }
 
+    .map-container::before {
+        display: none;
+    }
+
     .map-container .svg-container {
       width: 100%;
       height: 100%;

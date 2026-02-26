@@ -815,7 +815,7 @@
     z-index: 10;
     pointer-events: none;
     background-size: cover;
-    background-position: left top;
+    background-position: left center;;
     background-repeat: no-repeat;
   }
 

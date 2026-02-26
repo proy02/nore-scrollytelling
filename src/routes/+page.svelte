@@ -641,7 +641,6 @@
 </div>
 
 <div class="ending-section">
-  <div class="ending-blur"></div>
   <div class="ending-content" class:visible={scrollytellingDone}>
     <p>Yet this is also a story of care. Local groups bring farmers, scientists, and anglers together. School children count invertebrates; farmers plant riparian buffers; volunteers test water. Slowly, the invisible networks become visible again. The catchment becomes a shared canvas for stewardship—where every stream has a name, and every stretch of river tells a story.</p>
     <p>An Invitation to Co-Author</p>
@@ -1005,21 +1004,6 @@
     line-height: 1.6;
     color: #232323;
     margin: 0 0 1.5rem 0;
-  }
-
-  .ending-blur {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    margin-bottom: -100px;      /* pulls content back up so blur doesn't add space */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-    pointer-events: none;
-    z-index: 25;
   }
 
   .source {

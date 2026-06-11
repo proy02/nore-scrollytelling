@@ -432,7 +432,7 @@
         <path d="M416.78,300.69c1.79,3.55,3.96,6.34,6.83,4.9,2.84-1.43,1.85-4.31,1.67-4.9l2.56-1.29c.19.49,2.21,5.78-3.12,8.46-5.34,2.69-8.54-1.83-10.81-6.33-2.89-5.73-2.75-10.34,1.51-12.48,4.76-2.4,7.86.96,10.14,5.48.17.35.47.96.66,1.42l-9.44,4.75ZM422.62,295.17c-1.57-3.12-3.46-5.22-6.1-3.89-3.31,1.67-1.31,6.06-.73,7.33l6.83-3.44Z"/>
       </g>
     </g>
-    <g id="rivers_locator">
+    <g id="rivers_locator" transform="translate(55, 0)">
       <g mask="url(#mask)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -517,7 +517,7 @@
           <path d="M736.39,262c-.02,2.94,1.3,4.74,4.07,4.74,2.15,0,3.71-1.28,4.19-3.64.46-2.24-.2-4.34-3.27-6.77-3.23-2.55-4.57-4.65-3.93-7.89.52-2.61,2.51-4.46,5.59-4.46,4.53,0,5.65,3.5,5.31,6.25h-1.86c.17-2.17-.55-4.56-3.61-4.56-2.04,0-3.21,1.19-3.54,3.01-.42,2.29.35,3.73,3.24,6.05,3.93,3.15,4.7,5.51,3.98,8.66-.69,3.05-2.81,5.03-6.21,5.03-4.84,0-6-3.34-5.84-6.43h1.89Z" fill="#9e9e9e"/>
         </g>
       </g>
-      <g id="TIPPERRARY">
+      <g id="TIPPERRARY" transform="translate(50, 0)">
         <g opacity=".9">
           <g mask="url(#mask-4)">
             <rect x="35.44" y="704.23" width="317.36" height="48.17" fill="#fff"/>
@@ -554,7 +554,7 @@
         </g>
       </g>
     </g>
-    <g id="county_locator">
+    <g id="county_locator" transform="translate(55, 0)">
       <g mask="url(#mask-6)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -623,7 +623,7 @@
         <path d="M733.2,506.4c-.22,1.13-.36,2.16-.36,3.02,0,2.04.65,3.23,2.34,3.23,1.92,0,2.7-1.56,3.09-2.44h1.57c-.45,1.42-1.79,3.89-4.87,3.89-4.23,0-4.07-4.58-3.3-8.14,1.07-4.87,3.12-7.46,6.07-7.46,3.4,0,4.28,2.85,3.32,6.78l-.27,1.11h-7.59ZM739.49,505.06c.19-.8.36-1.68.36-2.38,0-1.54-.51-2.75-2.31-2.75-2.04,0-3.34,2.27-4.04,5.13h5.99Z"/>
       </g>
     </g>
-    <g id="tributaries_locator">
+    <g id="tributaries_locator" transform="translate(55, 0)">
       <g mask="url(#mask-9)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -715,7 +715,7 @@
         </g>
       </g>
     </g>
-    <g id="townlands_locator">
+    <g id="townlands_locator" transform="translate(55, 0)">
       <g mask="url(#mask-13)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -869,7 +869,7 @@
         </g>
       </g>
     </g>
-    <g id="selected_tributaries_locator">
+    <g id="selected_tributaries_locator" transform="translate(55, 0)">
       <g mask="url(#mask-20)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -1014,7 +1014,7 @@
         </g>
         <path d="M442.6,100.05c25.77,17.02.68,56.14,22.94,76.08.86.77,2.14-.5,1.27-1.27-22.2-19.88,3.17-58.88-23.31-76.37-.97-.64-1.87.92-.91,1.55h0Z" fill="#898989"/>
       </g>
-      <g>
+      <g transform="translate(45, 0)">
         <g opacity=".45">
           <g mask="url(#mask-24)">
             <rect x="29.49" y="458.67" width="133.22" height="64.54" fill="#fff"/>
@@ -1046,7 +1046,7 @@
         </g>
       </g>
     </g>
-    <g id="sac_sap_locator">
+    <g id="sac_sap_locator" transform="translate(55, 0)">
       <g mask="url(#mask-25)">
         <rect x="13.9" y="1.05" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -1118,7 +1118,7 @@
         <path d="M311.41,743.67s18.82-63.28,92.99-42.37" fill="none" stroke="#898989" stroke-miterlimit="10" stroke-width="1.75"/>
       </g>
     </g>
-    <g id="endangered_species_locator">
+    <g id="endangered_species_locator" transform="translate(55, 0)">
       <g mask="url(#mask-28)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -1317,7 +1317,7 @@
         <path d="M311.41,743.67s18.82-63.28,92.99-42.37" fill="none" stroke="#898989" stroke-miterlimit="10" stroke-width="1.75"/>
       </g>
     </g>
-    <g id="invasive_species_locator">
+    <g id="invasive_species_locator" transform="translate(55, 0)">
       <g mask="url(#mask-36)">
         <rect x="13.9" y="1.03" width="276.58" height="342.55" fill="#fff"/>
       </g>
@@ -1514,7 +1514,7 @@
       <path d="M737.08,644.31c-.29-7.29-11.68-7.05-16.63-7.34-8.43-.5-17.02-.53-25.08-3.38-4.09-1.45-7.89-3.64-10.94-6.75-.81-.83-2.08.44-1.27,1.27,11.44,11.68,29.05,9.5,43.86,11.2,2.9.33,8.11,1.22,8.26,5,.05,1.15,1.85,1.16,1.8,0h0Z" fill="#898989"/>
       <path d="M736.18,644.31c-.01-3.58-4.39-5.28-7.95-5.75-7.75-1.02-15.63-.77-23.37-1.83s-15.64-3.63-21.06-9.26" fill="none"/>
     </g>
-    <g id="pollution_locator">
+    <g id="pollution_locator" transform="translate(55, 0)">
       <g mask="url(#mask-44)">
         <rect x="13.9" y="1" width="276.58" height="342.55" fill="#fff"/>
       </g>
